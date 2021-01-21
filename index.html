@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bisrut Pyne</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="description" content="Bisrut Pyne - Web Developer" />
+    <meta
+      name="keywords"
+      content="BISRUT, PYNE, Bisrut, Pyne, Bisrut-Pyne, Web-Developemt, WEB-DEV"
+    />
+    <meta name="author" content="Bisrut Pyne" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body class="is-preload" oncontextmenu="return false">
+    <embed
+      src="images/bensound-creativeminds.mp3"
+      autostart="true"
+      hidden="true"
+      loop="true"
+    />
+    <div id="wrapper">
+      <header id="header">
+        <div class="logo">
+          <span class="fas fa-user-ninja fa-2x"> </span>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <p id="html1">&lt;html&gt;</p>
+            <h1 id="headingOne"><span id="typed"></span></h1>
+            <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"
+              async
+              defer
+            ></script>
+            <script>
+              window.onload = function () {
+                var typed = new Typed("#typed", {
+                  strings: [
+                    "Hey there! Bisrut here<br>Welcome to my website<br>Know about me, my work<br>And also Contact me!",
+                  ],
+                  backSpeed: 35,
+                  smartBackspace: true,
+                  backDelay: 2000,
+                  startDelay: 4000,
+                  typeSpeed: 55,
+                  loop: false,
+                });
+              };
+            </script>
+            <p id="html2">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/html&gt;
+            </p>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#about">
+                <p class="navbar-text">About</p>
+              </a>
+            </li>
+            <li>
+              <a href="#skills">
+                <p class="navbar-text">Skills</p>
+              </a>
+            </li>
+            <li>
+              <a href="#work">
+                <p class="navbar-text">Work</p>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <p class="navbar-text">Contact</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="main">
+        <style>
+          @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800");
+
+          .container {
+            font-family: "Poppins", sans-serif;
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+          }
+
+          .container .card {
+            position: relative;
+            width: 33.3%;
+            background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+            border-radius: 4px;
+            text-align: center;
+            overflow: hidden;
+            transition: 0.5s;
+            margin-right: 2%;
+            margin-left: 2%;
+          }
+
+          .container .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+          }
+
+          .container .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            pointer-events: none;
+            z-index: 1;
+          }
+
+          .percentage {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: inset 0 0 50px #000;
+            background: #222;
+            z-index: 1000;
+          }
+
+          .percentage .number {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50;
+          }
+
+          .percentage .number h2 {
+            color: #777;
+            font-size: 2rem;
+            transition: 0.5s;
+          }
+
+          .card:hover .percentage .number h2 {
+            color: #fff;
+            font-size: 3rem;
+            cursor: pointer;
+          }
+
+          .percentage .number h2 span {
+            font-size: 1.5rem;
+            color: #777;
+            transition: 0.5s;
+          }
+
+          .card:hover .percentage .number h2 span {
+            color: #fff;
+          }
+
+          .text {
+            margin-top: 2.5vh;
+            position: relative;
+            color: #777;
+            font-size: 2;
+            letter-spacing: 0;
+            text-transform: uppercase;
+            transition: 0.5s;
+          }
+
+          .card:hover .text {
+            color: #fff;
+          }
+
+          svg {
+            position: relative;
+          }
+
+          svg circle {
+            width: 100%;
+            height: 100%;
+            fill: none;
+            stroke: #191919;
+            stroke-width: 10;
+            stroke-linecap: round;
+            transform: translate(5px, 5px);
+          }
+
+          svg circle:nth-child(2) {
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+          }
+
+          .card:nth-child(1) svg circle:nth-child(2) {
+            stroke-dashoffset: calc(440 - (440 * 95) / 100);
+            stroke: #00ff43;
+          }
+
+          .card:nth-child(2) svg circle:nth-child(2) {
+            stroke-dashoffset: calc(440 - (440 * 90) / 100);
+            stroke: #00a1ff;
+          }
+
+          .card:nth-child(3) svg circle:nth-child(2) {
+            stroke-dashoffset: calc(440 - (440 * 80) / 100);
+            stroke: #ff04f7;
+          }
+
+          .gap {
+            margin: 10%;
+          }
+        </style>
+        <article id="skills">
+          <h2 class="major big-text">Skills</h2>
+          <br />
+          <div class="container">
+            <div class="card">
+              <div class="box">
+                <div class="percentage">
+                  <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                  </svg>
+                  <div class="number">
+                    <h2>95<span>%</span></h2>
+                  </div>
+                </div>
+                <h2 class="text">HTML5</h2>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <div class="percentage">
+                  <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                  </svg>
+                  <div class="number">
+                    <h2>90<span>%</span></h2>
+                  </div>
+                </div>
+                <h2 class="text">CSS3 / SASS</h2>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <div class="percentage">
+                  <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                  </svg>
+                  <div class="number">
+                    <h2>80<span>%</span></h2>
+                  </div>
+                </div>
+                <h2 class="text">Javascript</h2>
+              </div>
+            </div>
+          </div>
+          <div class="gap"></div>
+          <div class="container">
+            <div class="card">
+              <div class="box">
+                <div class="percentage">
+                  <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                  </svg>
+                  <div class="number">
+                    <h2>95<span>%</span></h2>
+                  </div>
+                </div>
+                <h2 class="text">PYTHON</h2>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <div class="percentage">
+                  <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                  </svg>
+                  <div class="number">
+                    <h2>90<span>%</span></h2>
+                  </div>
+                </div>
+                <h2 class="text">FIREBASE</h2>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <div class="percentage">
+                  <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                  </svg>
+                  <div class="number">
+                    <h2>80<span>%</span></h2>
+                  </div>
+                </div>
+                <h2 class="text">REACT</h2>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article id="work">
+          <h2 class="major big-text">Work</h2>
+          <p>To Be Updated</p>
+        </article>
+        <article id="about">
+          <h2 class="major big-text">About</h2>
+          <span class="image main"
+            ><img src="images/BP_WEB_DEV.jpg" alt=""
+          /></span>
+          <p>Hello! I am Bisrut. I love Web Developemt and Algorithms.</p>
+          <p>I am 12 and study in the 6th Grade.</p>
+          <p>My hobbies include music, art and web design.</p>
+        </article>
+        <article id="contact">
+          <h2 class="major big-text">Get In Touch</h2>
+          <form method="post" action="https://formspree.io/f/xdopweqy">
+            <div class="fields">
+              <div class="field half">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  name="name"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="field half">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  name="email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  placeholder="Your message"
+                  id="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <ul class="actions">
+              <li>
+                <input type="submit" value="Send Message" class="primary" />
+              </li>
+              <li><input type="reset" value="Reset" /></li>
+            </ul>
+          </form>
+          <ul class="icons">
+            <li>
+              <a class="icon brands fa-twitter"
+                ><span class="label">Twitter</span></a
+              >
+            </li>
+            <li>
+              <a class="icon brands fa-facebook-f"
+                ><span class="label">Facebook</span></a
+              >
+            </li>
+            <li>
+              <a class="icon brands fa-instagram"
+                ><span class="label">Instagram</span></a
+              >
+            </li>
+            <li>
+              <a class="icon brands fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+          </ul>
+        </article>
+      </div>
+      <script src="send-message.min.js" defer></script>
+
+      <script>
+        window.formbutton =
+          window.formbutton ||
+          function () {
+            (formbutton.q = formbutton.q || []).push(arguments);
+          };
+
+        formbutton("create", {
+          action: "https://formspree.io/f/maylarry",
+          title: "How can I help?",
+          fields: [
+            {
+              type: "text",
+              label: "Name: ",
+              name: "name",
+              required: true,
+              placeholder: "Your name",
+            },
+            {
+              type: "email",
+              label: "Email: ",
+              name: "email",
+              required: true,
+              placeholder: "Your email",
+            },
+            {
+              type: "textarea",
+              label: "Message: ",
+              name: "message",
+              required: true,
+              placeholder: "What would you like to ask?",
+            },
+            { type: "submit" },
+          ],
+          styles: {
+            fontFamily: "Montserrat",
+            title: {
+              background: "red",
+            },
+            button: {
+              background: "red",
+            },
+          },
+          initiallyVisible: true,
+        });
+      </script>
+      <script
+        data-ad-client="ca-pub-4288636520497158"
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      ></script>
+      <footer id="footer">
+        <p class="copyright">Bisrut Pyne&trade;&nbsp;&copy;&nbsp;2020-2025</p>
+      </footer>
+    </div>
+    <div id="bg"></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
